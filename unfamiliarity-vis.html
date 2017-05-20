@@ -100,6 +100,33 @@
     <h5 class="docs-header">Margin of Trump Vote vs Foreign-born Population per County</h5>
 </header>
 
+<div class="docs-section">
+    <div class="row">
+        <div class="three columns">
+            <h5 class="docs-header">Overview</h5>
+        </div>
+        <div class="nine columns">
+            <p>Donald Trump’s campaign was heavy with anti-immigration rhetoric. Analysis of the election data shows that low Immigrant Population correlated with higher GOP vote share in 2016 US Presidential Election. The purpose of this visualization is to show that Donald Trump was elected by populations that have less exposure to immigrants and other foreign-born people living in the United States. To demonstrate this relationship, I use a scatterplot and choropleth map in an interactive visualization.</p>
+        </div>
+    </div>
+</div>
+
+<div class="docs-section">
+    <div class="row">
+        <div class="three columns">
+            <h5 class="docs-header">Storyboarding</h5>
+        </div>
+        <div class="nine columns">
+            <p>After making preliminary sketches, I created a few quick visualizations in tableau to get a better idea of how to lay out the various parts of the visualization. I ended up deciding on a top-down approach because it can be easily navigated by scrolling up and down or automatically moving between places on the visualization.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="nine columns offset-by-three">
+            <img class="u-max-full-width" src="images/vis-sketch.jpg" alt="">
+        </div>
+
+    </div>
+</div>
 
 
 <div class="docs-section">
@@ -185,30 +212,36 @@
     </div>
 
     <div class="four columns">    <!--label for the type dropdown-->
-    <section id = "mapsection">
-      <h6>Maps</h6>
-      <form name="radiobuttons">
-        <input type="radio" class="radio" id="electionradio" name="mapsradio" value="trump_margin" checked=true> Election Results<br>
-        <input type="radio" class="radio" id="foreignradio" name="mapsradio" value="foreign_pop"> Percentage of Foreign Born Population<br>
-      </form>
-    </section>
+        <section id = "mapsection">
+            <h6>Maps</h6>
+            <form name="radiobuttons">
+                <input type="radio" class="radio" id="electionradio" name="mapsradio" value="trump_margin" checked=true> Election Results<br>
+                <input type="radio" class="radio" id="foreignradio" name="mapsradio" value="foreign_pop"> Percentage of Foreign Born Population<br>
+            </form>
+        </section>
     </div>
 
-    </div>
-    </div>
-
-
-  <svg class="chart"></svg>
-  <svg class="map" width="960" height="600"></svg>
-
-  <script src="amerrick-1.js"></script>
-
-    </div>
-<div id="provenance">
-  <ul>
-    <li>*Election data for Alaska is available only at the state-level.</li>
-    <li>**2015 census data not available for foreign-born population was substituted with data from 2009–1013 census data.</li>
-  </ul>
 </div>
+</div>
+
+<div class="nine columns">
+    <svg class="chart"></svg>
+</div>
+<svg class="map" width="960" height="600"></svg>
+
+<script src="amerrick-1.js"></script>
+
+
+    <div class="row" id="provenance">
+        <div class="nine columns">
+            <ul>
+                <li>*Election data for Alaska is available only at the state-level.</li>
+                <li>**2015 census data not available for foreign-born population was substituted with data from 2009–1013 census data.</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
 </body>
 </html>
